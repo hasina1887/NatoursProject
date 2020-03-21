@@ -6,6 +6,7 @@
     "node": "12.13.x"
   },
   "scripts": {
+    "main": "index.js",
     "compile:sass": "node-sass sass/main.scss css/style.css"
   },
   "repository": {
