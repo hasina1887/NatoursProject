@@ -6,8 +6,7 @@
     "node": "12.13.x"
   },
   "scripts": {
-    "start": " node index.js",
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+     "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
