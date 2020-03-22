@@ -211,11 +211,9 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 52rem; }
   .tour-box__side {
-    color: #FFF;
-    font-size: 2rem;
-    height: 50rem;
+    height: 52rem;
     transition: transform .8s ease;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     position: absolute;
@@ -223,7 +221,8 @@ body {
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    border-radius: 3px; }
+    border-radius: 3px;
+    overflow: hidden; }
     .tour-box__side--front {
       background-color: #FFF; }
     .tour-box__side--back {
@@ -235,15 +234,60 @@ body {
       .tour-box__side--back--blue {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .tour-box:hover .tour-box__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .tour-box:hover .tour-box__side--back {
     transform: rotateY(0); }
+  .tour-box__picture {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    height: 23rem;
+    background-size: cover;
+    background-blend-mode: screen; }
+    .tour-box__picture--orange {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg"); }
+    .tour-box__picture--green {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/nat-6.jpg"); }
+    .tour-box__picture--blue {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/nat-7.jpg"); }
+  .tour-box__heading h4 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #FFF;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    text-align: right;
+    width: 75%; }
+  .tour-box__heading--span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .tour-box__heading--span--orange {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    .tour-box__heading--span--blue {
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+    .tour-box__heading--span--green {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+  .tour-box__details {
+    padding: 3rem; }
+    .tour-box__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .tour-box__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .tour-box__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
 
 .header {
   height: 95vh;
   background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   background-size: cover;
   background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
   .header__logo-box {
