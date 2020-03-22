@@ -23,7 +23,7 @@
 
         &--back{
             transform: rotateY(180deg);
-
+            
             &--orange{
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
             }
@@ -120,7 +120,27 @@
                 }
             }
         }
+       
         
+    
+    }
+
+    &__price-summary{
+        top: 40%;
+        left: 48%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        color: $color-white;
+        text-align: center;
+        .text-only{
+            margin-bottom: 2rem;
+        }
+        .tour-price{
+            font-size: 6.5rem;
+            font-weight: 200;
+            margin-bottom: 6rem;
+        }
+
     }
 }
 

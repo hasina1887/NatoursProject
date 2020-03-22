@@ -281,6 +281,19 @@ body {
         padding: 1rem; }
         .tour-box__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+  .tour-box__price-summary {
+    top: 40%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #FFF;
+    text-align: center; }
+    .tour-box__price-summary .text-only {
+      margin-bottom: 2rem; }
+    .tour-box__price-summary .tour-price {
+      font-size: 6.5rem;
+      font-weight: 200;
+      margin-bottom: 6rem; }
 
 .header {
   height: 95vh;
