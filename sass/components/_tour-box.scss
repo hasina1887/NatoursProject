@@ -124,20 +124,24 @@
         
     
     }
-
+// back card stylying
     &__price-summary{
-        top: 40%;
-        left: 48%;
+        top: 50%;
+        left: 50%;
         transform: translate(-50%,-50%);
         position: absolute;
         color: $color-white;
         text-align: center;
+        width: 90%;
+
         .text-only{
+            font-size: 1.4rem;
+            text-transform: uppercase ;
             margin-bottom: 2rem;
         }
         .tour-price{
-            font-size: 6.5rem;
-            font-weight: 200;
+            font-size: 6rem;
+            font-weight: 100;
             margin-bottom: 6rem;
         }
 
